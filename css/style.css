@@ -1,12 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
-    background-color: rgb(87, 87, 87);
+    margin: 0px !important; 
+    padding: 0px !important;
+    background-color: rgb(30, 30, 30);
 }
 
 .navbar-container{
-    background-color: rgb(49, 48, 48);
+    background-color: rgb(0, 0, 0);
 }
 
 .navbar{
+    margin: 0px !important; 
+    padding: 0px !important; 
     position: relative;
 }
 
@@ -41,4 +50,12 @@ h1{
     width: 100px;
     height: 100px;
     border-radius: 15px;
+}
+
+.carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
 }
