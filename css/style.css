@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(87, 87, 87);
+}
+
+.navbar-container{
+    background-color: rgb(49, 48, 48);
+}
+
+.navbar{
+    position: relative;
+}
+
+.navbar-nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+h1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.navbar-brand{
+    color:rgb(255, 255, 255) ; 
+}
+.navbar-brand.active, .navbar-brand:focus, .navbar-brand:hover{
+    color: blueviolet;
+}
+
+.nav-link{
+    color: rgb(144, 122, 255) !important;
+}
+.nav-link.active, .nav-link:focus, .nav-link:hover{
+    color: white !important;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
