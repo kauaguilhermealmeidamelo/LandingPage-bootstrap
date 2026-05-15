@@ -7,26 +7,26 @@
     <title>Início</title>
 
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
     <!-- Navbar -->
     <div class="navbar-container">
-
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-
-                <a class="navbar-brand" href="#"><img src="./img/logo.png" class="logo"
-                        class="d-inline-block align-text-top">Feito por skatistas, para skatistas</a>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" class="logo" class="d-inline-block align-text-top">
+                    Feito por skatistas, para skatistas
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -36,74 +36,245 @@
                 </div>
             </div>
         </nav>
-
     </div>
+
     <!-- Carrossel -->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        </div>
+
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./img/skate2.png" class="d-block w-100" alt="1">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Seja radical ou morra tentando</h2>
+                    <p class="carousel-subtitle">Os melhores shapes e completos para o seu estilo</p>
+                    <a href="#pranchas" class="btn-hero">Ver produtos</a>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="./img/skate3.png" class="d-block w-100" alt="2">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Qualidade que você sente</h2>
+                    <p class="carousel-subtitle">Materiais selecionados por quem anda de skate</p>
+                    <a href="#pranchas" class="btn-hero">Ver produtos</a>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="./img/skate4.png" class="d-block w-100" alt="3">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Novo drop disponível</h2>
+                    <p class="carousel-subtitle">Shapes exclusivos CBGANG — edição limitada</p>
+                    <a href="#pranchas" class="btn-hero">Ver produtos</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- Barra de destaques -->
+    <div class="destaques-bar">
+        <div class="destaque-item">
+            <i class="bi bi-truck"></i>
+            <div>
+                <span class="destaque-titulo">Frete grátis</span>
+                <span class="destaque-sub">Acima de R$ 299</span>
+            </div>
+        </div>
+        <div class="destaque-item">
+            <i class="bi bi-arrow-left-right"></i>
+            <div>
+                <span class="destaque-titulo">Troca fácil</span>
+                <span class="destaque-sub">Até 30 dias</span>
+            </div>
+        </div>
+        <div class="destaque-item">
+            <i class="bi bi-shield-check"></i>
+            <div>
+                <span class="destaque-titulo">Compra segura</span>
+                <span class="destaque-sub">Pagamento protegido</span>
+            </div>
+        </div>
+        <div class="destaque-item">
+            <i class="bi bi-headset"></i>
+            <div>
+                <span class="destaque-titulo">Suporte</span>
+                <span class="destaque-sub">Seg-Sex, 9h às 18h</span>
             </div>
         </div>
     </div>
 
+    <!-- Âncora invisível -->
+    <div id="pranchas"></div>
 
-    <!--Cards-->
+    <!-- Título seção produtos -->
+    <div class="secao-titulo">
+        <p class="secao-label">Catálogo</p>
+        <h1 class="secao-heading"><strong>Produtos</strong></h1>
+        <p class="secao-sub">Shapes, completos e acessórios selecionados por skatistas</p>
+        <div class="secao-divisor"></div>
+    </div>
 
-    <h1>Pranchas</h1>
-    <div class="cardMain">
-        <div class="cardSkate"></div>
-        <div class="row row-cols-1 row-cols-md-3 g-5">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+    <!-- Cards -->
+    <div class="produtos-section">
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <button class="btn-wish" onclick="toggleWish(this)">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <img src="./img/skateboard1.png" alt="Skate Montado HSC Faith">
+                    </div>
+                    <div class="card-body-custom">
+                        <div class="d-flex gap-2 mb-2">
+                            <span class="badge-new">Novo</span>
+                        </div>
+                        <p class="card-brand mb-0">HSC</p>
+                        <h2 class="card-title-custom">Skate Montado HSC Faith</h2>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="rating-stars">★★★★★</span>
+                            <span class="rating-count">(84 avaliações)</span>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                            <span class="price-main">R$ 359,90</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="stock-dot"></span>
+                            <span class="stock-label">Em estoque</span>
+                        </div>
+                        <hr class="divider-custom">
+                        <div class="d-flex gap-2">
+                            <button class="btn-cart" onclick="addToCart(this)">
+                                <i class="bi bi-cart3"></i>
+                                Adicionar ao carrinho
+                            </button>
+                            <button class="btn-share">
+                                <i class="bi bi-share"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <button class="btn-wish" onclick="toggleWish(this)">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <img src="./img/skateboard2.png" alt="Shape CBGANG Marfim Mouth">
+                    </div>
+                    <div class="card-body-custom">
+                        <div class="d-flex gap-2 mb-2">
+                            <span class="badge-new">Novo</span>
+                            <span class="badge-hot">🔥 Mais vendido</span>
+                        </div>
+                        <p class="card-brand mb-0">CBGANG</p>
+                        <h2 class="card-title-custom">Shape CBGANG Marfim Mouth</h2>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="rating-stars">★★★★★</span>
+                            <span class="rating-count">(127 avaliações)</span>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                            <span class="price-main">R$ 114,90</span>
+                            <span class="price-old">R$ 149,90</span>
+                            <span class="price-discount">−23%</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="stock-dot"></span>
+                            <span class="stock-label">Em estoque</span>
+                        </div>
+                        <hr class="divider-custom">
+                        <div class="d-flex gap-2">
+                            <button class="btn-cart" onclick="addToCart(this)">
+                                <i class="bi bi-cart3"></i>
+                                Adicionar ao carrinho
+                            </button>
+                            <button class="btn-share">
+                                <i class="bi bi-share"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <button class="btn-wish" onclick="toggleWish(this)">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <img src="./img/skateboard3.png" alt="Shape CBGANG Marfim Assasins">
+                    </div>
+                    <div class="card-body-custom">
+                        <div class="d-flex gap-2 mb-2">
+                            <span class="badge-new">Novo</span>
+                        </div>
+                        <p class="card-brand mb-0">CBGANG</p>
+                        <h2 class="card-title-custom">Shape CBGANG Marfim Assasins</h2>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="rating-stars">★★★★☆</span>
+                            <span class="rating-count">(59 avaliações)</span>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                            <span class="price-main">R$ 114,90</span>
+                            <span class="price-old">R$ 149,90</span>
+                            <span class="price-discount">-23%</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="stock-dot"></span>
+                            <span class="stock-label">Em estoque</span>
+                        </div>
+                        <hr class="divider-custom">
+                        <div class="d-flex gap-2">
+                            <button class="btn-cart" onclick="addToCart(this)">
+                                <i class="bi bi-cart3"></i>
+                                Adicionar ao carrinho
+                            </button>
+                            <button class="btn-share">
+                                <i class="bi bi-share"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 
+    <script>
+        function toggleWish(btn) {
+            btn.classList.toggle('active');
+            const icon = btn.querySelector('i');
+            icon.className = btn.classList.contains('active') ? 'bi bi-heart-fill' : 'bi bi-heart';
+        }
+
+        function addToCart(btn) {
+            const original = btn.innerHTML;
+            btn.innerHTML = '<i class="bi bi-check-lg"></i> Adicionado!';
+            btn.style.background = '#1db97a';
+            setTimeout(() => {
+                btn.innerHTML = original;
+                btn.style.background = '';
+            }, 1800);
+        }
+    </script>
 
 </body>
-
 </html>
