@@ -410,91 +410,104 @@ body {
 }
 
 .btn-cart:active {
-    transform: scale(0.97);}
+    transform: scale(0.97);
+}
 
-.pSobre{
+/* ── SOBRE ── */
+
+.pSobre {
+    
+    color: white;
     font-size: 20px;
-     margin-right: 200px;
-     margin-top: 20px;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.pImg{
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 100px;
+
+.pImg {
+    display: block;
+    margin: 100px auto 0 auto;
     width: 700px;
-    height: 200%;
+    max-width: 90%;
+    height: auto;
     border-radius: 30px;
-    box-shadow: 7px 9px 10px  rgb(144, 122, 255);
+    box-shadow: 7px 9px 10px rgb(144, 122, 255);
 }
 
-.contato{
-    background:#111;
-    color:white;
-    padding:60px;
-    text-align:center;
+/* ── CONTATO ── */
+
+.contato {
+    background: #111;
+    color: white;
+    padding: 60px;
+    text-align: center;
 }
 
-.contato h1{
-    font-size:42px;
-    font-family:"Old English Text MT";
-    margin-bottom:15px;
+.contato h1 {
+    font-size: 42px;
+    font-family: "Old English Text MT";
+    margin-bottom: 15px;
 }
 
-.contato p{
-    color:#dcdcdc;
+.contato p {
+    color: #dcdcdc;
 }
 
-.info{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-    margin-top:40px;
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.card{
-    width:220px;
-    background:#1b1b1b;
-    padding:25px;
-    border-radius:15px;
-    border:2px solid #333;
-    transition:0.5s;
+.card {
+    width: 220px;
+    background: #1b1b1b;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    transition: 0.5s;
 }
 
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 20px #ffffff;
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #ffffff;
 }
 
-.card i{
-    font-size:35px;
-    color:blueviolet;
+.card i {
+    font-size: 35px;
+    color: blueviolet;
 }
 
-.card h3{
-    margin-top:10px;
-    color:white;
+.card h3 {
+    margin-top: 10px;
+    color: white;
 }
 
-.rodape{
-    background:#0a0a0a;
-    color:#bdbdbd;
-    text-align:center;
-    padding:20px;
-    border-top:2px solid blueviolet;
+/* ── RODAPÉ ── */
+
+.rodape {
+    background: #0a0a0a;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid blueviolet;
 }
 
-.rodape p{
-    margin:8px;
-    font-size:14px;
+.rodape p {
+    margin: 8px;
+    font-size: 14px;
 }
 
-.rodape:hover{
-    transition:0.5s;
-    color:white;
+.rodape:hover {
+    transition: 0.5s;
+    color: white;
 }
 
+/* ── BOTÃO COMPARTILHAR ── */
 
 .btn-share {
     width: 40px;
@@ -518,4 +531,99 @@ body {
 
 .btn-share i {
     font-size: 17px;
+}
+
+/* ── FOOTER ── */
+
+.footer {
+    background-color: #0a0a0a;
+    border-top: 2px solid #9a1acc;
+    padding: 60px 60px 0 60px;
+    margin-top: 60px;
+}
+
+.footer-top {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(40, 40, 40);
+}
+
+.footer-brand {
+    flex: 2;
+    min-width: 200px;
+}
+
+.footer-slogan {
+    color: #888;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgb(60, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 16px;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.footer-socials a:hover {
+    border-color: #9a1acc;
+    color: #9a1acc;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4 {
+    color: #f0f0f0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.footer-links a {
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #9a1acc;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    color: #555;
+    font-size: 13px;
+    margin: 0;
 }
